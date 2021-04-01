@@ -1,1 +1,2 @@
-# Software Development Plan
+# Vim Tutorial app
+## Software Development Plan

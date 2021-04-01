@@ -1,0 +1,6 @@
+---
+- !ruby/object:User
+  id: 70114024430020
+  name: Raph
+  colour: 3
+  progress: []
