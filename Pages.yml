@@ -1,0 +1,42 @@
+---
+- !ruby/object:Page
+  name: main
+  selections:
+  - Lessons
+  - User info
+  - Save & Quit
+  cursor: 0
+- !ruby/object:Page
+  name: Lessons
+  selections:
+  - Cursor movement
+  - Modes
+  - Commands
+  - Back
+  cursor: 0
+- !ruby/object:Page
+  name: Cursor movement
+  selections:
+  - Learn
+  - Excercise
+  - Back
+  cursor: 0
+- !ruby/object:Page
+  name: Modes
+  selections:
+  - Learn
+  - Excercise
+  - Back
+  cursor: 0
+- !ruby/object:Page
+  name: Commands
+  selections:
+  - Learn
+  - Excercise
+  - Back
+  cursor: 0
+- !ruby/object:Page
+  name: User info
+  selections:
+  - Back
+  cursor: 0

@@ -7,7 +7,7 @@ module Views
             puts "#{arrow} #{menu.name}"
             puts 'Use "j", "k" to select an option:'
             temp_menu = (menu.selections).map(&:dup)
-            temp_menu[arrow] << "<"
+            temp_menu[arrow] << " <"
             puts temp_menu
         end
 

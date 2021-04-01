@@ -1,9 +1,22 @@
 
 require "rainbow"
 require "./models/User"
-require "./MainRoutes"
-require "./LessonRoutes"
-require "./models/Menus"
+require "./Routes"
+require "./models/Pages"
+
+# page = Page.new("main",["Lessons","User info","Save & Quit"])
+# page.save
+# page = Page.new("Lessons",["Cursor movement",'Modes','Commands','Back'])
+# page.save
+# page = Page.new("Cursor movement",["Learn",'Excercise','Back'])
+# page.save
+# page = Page.new("Modes",["Learn",'Excercise','Back'])
+# page.save
+# page = Page.new("Commands",["Learn",'Excercise','Back'])
+# page.save
+# page = Page.new("User info",['Back'])
+# page.save
+
 
 # print "Enter user name: "
 # name = gets.chomp
@@ -17,5 +30,5 @@ require "./models/Menus"
 #     user = User.new(name, colour)
 #     user.save
 # end
-main_menu = Menu.find("main")
-main_menu.cursor = Routes::menu(main_menu) while main_menu.cursor != nil
+main_page = Page.find("main")
+main_page.cursor = Routes::menu(main_page) while main_page.cursor != nil
