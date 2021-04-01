@@ -1,11 +1,12 @@
 require_relative "./ActiveRecord"
 
 class Page < ActiveRecord
-    attr_reader :selections, :name
-    attr_accessor :cursor
+    attr_reader :selections, :name, :content
+    attr_accessor :cursor, :content
 
-    def initialize(name,selections, cursor = 0)
+    def initialize(name, content, selections, cursor = 0)
         @name = name
+        @content = content
         @selections = selections
         @cursor = cursor
     end

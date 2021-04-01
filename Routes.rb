@@ -1,12 +1,13 @@
 
-require "./controllers/VimControls"
-require "./views/menu/menu"
-require "./models/Pages"
+require_relative "./views/cls"
+require_relative "./controllers/VimControls"
+require_relative "./views/menu/menu"
+require_relative "./models/Pages"
 
 module Routes
     def self.menu(page)
         cursor = page.cursor
-        Views::Menu.main(cursor,page)
+        Routes::display(cursor,page)
         menu_length = page.selections.length
         
         cursor, return_chr = vicont(cursor)
@@ -21,5 +22,18 @@ module Routes
             cursor = 0 if cursor > menu_length - 1
         end
         cursor
+    end
+
+    def self.display(cursor,page)
+        cls
+        case page.name
+        when "User info"
+            colour = $user.colour
+            page.content = 
+"Your name: #{$user.name}\n
+Favorite colour: #{Rainbow(colour.to_s.capitalize).color(colour)}\n
+Progress: #{$user.progress}\n"
+        end
+        Views::Menu.main(cursor,page)
     end
 end

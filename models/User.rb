@@ -1,7 +1,7 @@
 require_relative "./ActiveRecord"
 
 class User < ActiveRecord
-    attr_reader :name, :colour
+    attr_reader :name, :colour, :progress
 
     def initialize(name, colour)
         @id = self.object_id

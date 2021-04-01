@@ -1,11 +1,16 @@
 ---
 - !ruby/object:User
-  id: 70114024430020
-  name: Raph
-  colour: 3
+  id: 70166201980020
+  name: James
+  colour: :purple
   progress: []
 - !ruby/object:User
-  id: 70151702012640
-  name: r
-  colour: 3
+  id: 70294421849420
+  name: Raph
+  colour: :yellow
+  progress: []
+- !ruby/object:User
+  id: 70129489141020
+  name: Jake
+  colour: :cyan
   progress: []
