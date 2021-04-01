@@ -2,7 +2,7 @@ require_relative "./GetChr"
 
 def vicont (cursor)
     str = getchr
-    case str.downcase
+    case str
     when "j"
         cursor += 1
     when "k"

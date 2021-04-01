@@ -20,6 +20,6 @@ module Routes
             cursor = menu_length - cursor.abs if cursor < 0
             cursor = 0 if cursor > menu_length - 1
         end
-        return cursor
+        cursor
     end
 end

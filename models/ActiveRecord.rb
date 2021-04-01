@@ -20,12 +20,12 @@ class ActiveRecord
 
     def self.find(name)
         if name.class == ''.class
-            all.detect { |user| user.name.downcase == name.downcase }
+            all.detect { |obj| obj.name.downcase == name.downcase }
         end
     end
 
-    def self.save(user)
-        all << user
+    def self.save(obj)
+        all << obj
         File.open(file_name, 'w') {|file| file.write(all.to_yaml) }
     end
 
