@@ -1,0 +1,18 @@
+---
+- !ruby/object:Menu
+  name: main
+  selections:
+  - 'Lessons: '
+  - 'User info: '
+  - 'Save & Quit: '
+  cursor: 0
+  selected: true
+- !ruby/object:Menu
+  name: lesson
+  selections:
+  - 'Cursor movement: '
+  - 'Modes: '
+  - 'Commands: '
+  - 'Back: '
+  cursor: 0
+  selected: false
