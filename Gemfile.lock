@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    color (1.8)
+    rainbow (3.0.0)
+
+PLATFORMS
+  universal-darwin-19
+
+DEPENDENCIES
+  color (~> 1.8)
+  rainbow
+
+BUNDLED WITH
+   2.2.15
