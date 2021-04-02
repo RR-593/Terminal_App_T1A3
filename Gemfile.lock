@@ -1,14 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    color (1.8)
+    betterlorem (0.1.2)
     rainbow (3.0.0)
 
 PLATFORMS
   universal-darwin-19
 
 DEPENDENCIES
-  color (~> 1.8)
+  betterlorem (~> 0.1.2)
   rainbow
 
 BUNDLED WITH

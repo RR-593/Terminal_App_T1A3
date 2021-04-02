@@ -19,3 +19,8 @@
   name: Poop
   colour: :red
   progress: []
+- !ruby/object:User
+  id: 70154520208220
+  name: ''
+  colour: :cyan
+  progress: []

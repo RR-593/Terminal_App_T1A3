@@ -1,5 +1,3 @@
-
-
 module Views
     module Page
         def self.main(arrow, page)
@@ -7,7 +5,8 @@ module Views
             selections = (page.selections).map(&:dup)
             selections[arrow] << " <"
 
-            puts content
+            puts page.name.capitalize + "\n\n"
+            puts content + "\n\n"
             puts selections
         end
 

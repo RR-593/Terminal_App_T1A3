@@ -18,9 +18,8 @@
   cursor: 0
 - !ruby/object:Page
   name: Cursor movement
-  content: ''
+  content: "In vim you cant use your mouse to move the cursor.\nSo to move the cusor in vim you need to use hjkl\nas so:\n\n         ^\n         k\n    < h     l >\n         j\n         v\n\nAlternatively you can use the <v^> arrow keys to\nmove the cursor but you'll lose preciuos time!\n\nIn this excercise you'll need to move the cursor\nonto all the '*' characters."
   selections:
-  - Learn
   - Excercise
   - Back
   cursor: 0
@@ -28,7 +27,6 @@
   name: Modes
   content: ''
   selections:
-  - Learn
   - Excercise
   - Back
   cursor: 0
@@ -36,7 +34,6 @@
   name: Commands
   content: ''
   selections:
-  - Learn
   - Excercise
   - Back
   cursor: 0
