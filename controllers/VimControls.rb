@@ -3,12 +3,21 @@ require_relative "./GetChr"
 def vicont (cursor)
     str = getchr
     case str
+    when "h"
     when "j"
         cursor += 1
     when "k"
         cursor -= 1
+    when "l"
     when "\r"
         non_alpha_chr = true
+    when "\e"
+        case getchr + getchr
+        when "[A"
+            cursor -= 1
+        when "[B"
+            cursor += 1
+        end
     when "q"
         non_alpha_chr = true
         cursor = 99

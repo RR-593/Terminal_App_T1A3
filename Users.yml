@@ -14,3 +14,8 @@
   name: Jake
   colour: :cyan
   progress: []
+- !ruby/object:User
+  id: 70317272380800
+  name: Poop
+  colour: :red
+  progress: []

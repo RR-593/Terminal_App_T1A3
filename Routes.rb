@@ -1,7 +1,7 @@
 
 require_relative "./views/cls"
 require_relative "./controllers/VimControls"
-require_relative "./views/menu/menu"
+require_relative "./views/page/page"
 require_relative "./models/Pages"
 
 module Routes
@@ -29,11 +29,12 @@ module Routes
         case page.name
         when "User info"
             colour = $user.colour
+
             page.content = 
 "Your name: #{$user.name}\n
 Favorite colour: #{Rainbow(colour.to_s.capitalize).color(colour)}\n
 Progress: #{$user.progress}\n"
         end
-        Views::Menu.main(cursor,page)
+        Views::Page.main(cursor,page)
     end
 end
