@@ -1,0 +1,5 @@
+require_relative "./create_doc_n_split"
+require_relative "./cursor_boundries"
+require_relative "../../controllers/VimControls"
+require_relative "../../views/cls"
+require_relative "../../views/exercises/cursor"

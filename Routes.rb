@@ -7,7 +7,7 @@ module Routes
     def self.menu(page)
         cursor = page.cursor
         temp_cursor = [0,cursor]
-        MainController::display(cursor,page)
+        MainController::display_page(cursor,page)
         menu_length = page.selections.length
         
         temp_cursor, return_chr = vicont(temp_cursor = [0,cursor])

@@ -3,7 +3,7 @@ require_relative "../views/pages/user_info"
 require_relative "../views/cls"
 
 module MainController
-    def self.display(cursor,page)
+    def self.display_page(cursor,page)
         cls
         case page.name
         when "User info"

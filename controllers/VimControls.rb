@@ -20,9 +20,9 @@ def vicont (cursor)
         when "[B"
             cursor[1] += 1
         when "[C"
-            cursor[0] -= 1
-        when "[D"
             cursor[0] += 1
+        when "[D"
+            cursor[0] -= 1
         end
     when "q"
         non_alpha_chr = true
