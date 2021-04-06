@@ -16,8 +16,8 @@ def cursor_exercise(para=1,astrix=3)
 
   non_alpha_chr = nil
 
-  timer_instance = 0
-
+  $timer_instance = 0
+  timer = Thread.new {loop do;$timer_instance+=1;sleep 1;end}
   $min = 0
   $hour = 0
   begin
@@ -25,7 +25,8 @@ def cursor_exercise(para=1,astrix=3)
     display_cursor = cursor_boundries(cursor,doc_lines) if !non_alpha_chr
 
     # Header ==============
-    objective = "Touched *'s (#{$astrixs.length}/#{num_astrix})" 
+    objective = "Touched asterisks (#{$astrixs.length}/#{num_astrix})" 
+    Thread.kill(timer) if end_next_loop == true
     objective_cleared = end_next_loop == true ? " Congrats you got them all\n" : ""
     how_to_leave = end_next_loop == true ? "To exit press 'enter'" : ""
     header = middle(objective + objective_cleared,66) + objective + Rainbow(objective_cleared).color(:green) + middle(how_to_leave,66) + how_to_leave.sub(/[e][x][i][t]/,Rainbow("exit").color(:red))
@@ -36,9 +37,11 @@ def cursor_exercise(para=1,astrix=3)
     Views::Exercises.print_doc(display_cursor,doc_lines)
 
     # Footer ============
-    #print middle(display_time_up(timer_instance),66) + display_time_up(timer_instance)
+    print middle(display_time_up($timer_instance),66) + display_time_up($timer_instance)
 
-    cursor, non_alpha_chr = vicont(cursor)
+    user_input = Thread.new {cursor, non_alpha_chr = vicont(cursor)}
+    # kill_it = Thread.new {sleep 1; Thread.kill(user_input)}
+    user_input.join
 
     end_next_loop = true if $astrixs.length == num_astrix
 

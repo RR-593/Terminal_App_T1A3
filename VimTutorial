@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require "rainbow"
-require_relative "./Routes"
+require_relative "./routes"
 require_relative "./models/Pages"
 require_relative "./Loggin"
 

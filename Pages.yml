@@ -18,23 +18,23 @@
   cursor: 0
 - !ruby/object:Page
   name: Basic movement
-  content: "In vim you cant use your mouse to move the cursor.\nSo to move the cusor in vim you need to use hjkl\nas so:\n\n         ^\n         k\n    < h     l >\n         j\n         v\n\nAlternatively you can use the <v^> arrow keys to\nmove the cursor but you'll lose preciuos time!\n\nIn this excercise you'll need to move the cursor\nonto all the '*' characters."
+  content: "In vim you cant use your mouse to move the cursor.\nSo to move the cusor in vim you need to use hjkl\nas so:\n\n         ^\n         k\n    < h     l >\n         j\n         v\n\nAlternatively you can use the <v^> arrow keys to\nmove the cursor but you'll lose preciuos time!\n\nIn this excercise you'll need to move the cursor\nonto all the asterisks characters."
   selections:
-  - Exercise
+  - Exercise (1)
   - Back
   cursor: 0
 - !ruby/object:Page
   name: Advance movement
   content: ''
   selections:
-  - Exercise
+  - Exercise (2)
   - Back
   cursor: 0
 - !ruby/object:Page
   name: Pro movement
   content: ''
   selections:
-  - Exercise
+  - Exercise (3)
   - Back
   cursor: 0
 - !ruby/object:Page

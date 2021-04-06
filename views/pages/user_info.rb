@@ -1,10 +1,10 @@
 module Views
     module Pages
-        def self.user_info(colour)
+        def self.user_info
             name = "Your name: #{$user.name}\n"
-            fav_colour = "Favorite colour: #{Rainbow(colour.to_s.capitalize).color(colour)}\n"
-            progress = "Progress: #{$user.progress}\n"
-            return name + fav_colour + progress
+            fav_colour = "Favorite colour: #{$user.colour.to_s.capitalize}\n"
+            best_time = "Best times [m:s]: \n  (1) #{$user.time}\n  (2) #{$user.time}\n  (3) #{$user.time}"
+            name + fav_colour + best_time
         end
     end
 end

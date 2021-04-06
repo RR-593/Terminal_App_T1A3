@@ -7,7 +7,7 @@ module MainController
     cls
   case page.name
   when "User info"
-    page.content = Views::Pages.user_info($user.colour)
+    page.content = Views::Pages.user_info
   end
     Views::Page.main(cursor,page)
   end

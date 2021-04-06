@@ -1,31 +1,6 @@
 ---
 - !ruby/object:User
-  id: 70175550949240
-  name: ronniey
-  colour: :green
-  progress: []
-- !ruby/object:User
-  id: 70227526498340
-  name: ronnie
-  colour: :green
-  progress: []
-- !ruby/object:User
-  id: 70316718643880
+  id: 70213685539060
   name: Raph
-  colour: :purple
-  progress: []
-- !ruby/object:User
-  id: 70130734575140
-  name: NewRaph
-  colour: :blue
-  progress: []
-- !ruby/object:User
-  id: 70096655721900
-  name: ''
   colour: :cyan
-  progress: []
-- !ruby/object:User
-  id: 70286565533800
-  name: "\e[C\e[C\e[A\e[A"
-  colour: :red
-  progress: []
+  time: '00:00'

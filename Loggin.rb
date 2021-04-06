@@ -1,7 +1,9 @@
 require "rainbow"
 require_relative "./models/User"
+require_relative "./views/fanss_display/refrence_displays"
 
 def loggin
+    cls
     print "\nEnter user name: "
     name = gets.chomp
     colours = [:red, :green, :yellow, :blue, :purple, :cyan]
