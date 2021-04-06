@@ -19,5 +19,5 @@ require_relative "./Loggin"
 # page.save
 
 loggin
-main_page = Page.find("main")
+main_page = Page.find("Vim cursor")
 main_page.cursor = Routes::menu(main_page) while main_page.cursor != nil

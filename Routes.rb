@@ -3,6 +3,8 @@ require_relative "./controllers/MainController"
 require_relative "./controllers/VimControls"
 require_relative "./models/Pages"
 
+require_relative "./exercises/exe_refs"
+
 module Routes
     def self.menu(page)
         cursor = page.cursor
@@ -19,6 +21,11 @@ module Routes
                 next_menu.cursor = Routes::menu(next_menu) while next_menu.cursor != nil if cursor != menu_length - 1
                 next_menu.cursor = 0
             end
+
+            if page.selections[cursor] == "Exercise"
+                cursor_exercise
+            end
+
             cursor = nil if cursor >= menu_length - 1
         else 
             cursor = menu_length - cursor.abs if cursor < 0

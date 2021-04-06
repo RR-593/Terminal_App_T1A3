@@ -1,26 +1,31 @@
 ---
 - !ruby/object:User
-  id: 70166201980020
-  name: James
+  id: 70175550949240
+  name: ronniey
+  colour: :green
+  progress: []
+- !ruby/object:User
+  id: 70227526498340
+  name: ronnie
+  colour: :green
+  progress: []
+- !ruby/object:User
+  id: 70316718643880
+  name: Raph
   colour: :purple
   progress: []
 - !ruby/object:User
-  id: 70294421849420
-  name: Raph
-  colour: :yellow
+  id: 70130734575140
+  name: NewRaph
+  colour: :blue
   progress: []
 - !ruby/object:User
-  id: 70129489141020
-  name: Jake
-  colour: :cyan
-  progress: []
-- !ruby/object:User
-  id: 70317272380800
-  name: Poop
-  colour: :red
-  progress: []
-- !ruby/object:User
-  id: 70154520208220
+  id: 70096655721900
   name: ''
   colour: :cyan
+  progress: []
+- !ruby/object:User
+  id: 70286565533800
+  name: "\e[C\e[C\e[A\e[A"
+  colour: :red
   progress: []

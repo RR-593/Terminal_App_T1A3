@@ -5,9 +5,11 @@ def prara_create
   
   word_length_total = 0
   
+  para_cut = 43
+
   vim_para_words.each {|word| 
-    word.concat(word_length_total >= 51 ? "\n" : " ") 
-    word_length_total = word_length_total < 51 ? word_length_total + word.bytesize : 0
+    word.concat(word_length_total >= para_cut ? "\n" : " ") 
+    word_length_total = word_length_total < para_cut ? word_length_total + word.bytesize : 0
     }
   vim_para_words.join('')
 end

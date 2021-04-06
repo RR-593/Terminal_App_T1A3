@@ -1,40 +1,40 @@
 ---
 - !ruby/object:Page
-  name: main
-  content: 'Use "j", "k" to select an option:'
+  name: Vim cursor
+  content: "Welcome!\n\nYou can start navigating by using 'j', 'k' and enter."
   selections:
-  - Lessons
+  - Movements
   - User info
   - Save & Quit
   cursor: 0
 - !ruby/object:Page
-  name: Lessons
+  name: Movements
   content: 'Use "j", "k" to select an option:'
   selections:
-  - Cursor movement
-  - Modes
-  - Commands
+  - Basic movement
+  - Advance movement
+  - Pro movement
   - Back
   cursor: 0
 - !ruby/object:Page
-  name: Cursor movement
+  name: Basic movement
   content: "In vim you cant use your mouse to move the cursor.\nSo to move the cusor in vim you need to use hjkl\nas so:\n\n         ^\n         k\n    < h     l >\n         j\n         v\n\nAlternatively you can use the <v^> arrow keys to\nmove the cursor but you'll lose preciuos time!\n\nIn this excercise you'll need to move the cursor\nonto all the '*' characters."
   selections:
-  - Excercise
+  - Exercise
   - Back
   cursor: 0
 - !ruby/object:Page
-  name: Modes
+  name: Advance movement
   content: ''
   selections:
-  - Excercise
+  - Exercise
   - Back
   cursor: 0
 - !ruby/object:Page
-  name: Commands
+  name: Pro movement
   content: ''
   selections:
-  - Excercise
+  - Exercise
   - Back
   cursor: 0
 - !ruby/object:Page
