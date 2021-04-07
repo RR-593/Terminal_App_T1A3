@@ -41,7 +41,8 @@
   name: User info
   content: ''
   selections:
-  - Change colour
   - Change Name
+  - Change Colour
+  - Delete Yourself
   - Back
   cursor: 0

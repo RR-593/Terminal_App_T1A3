@@ -33,8 +33,8 @@ class ActiveRecord
         self.class.save(self)
     end
 
-    def self.delete(recipe)
-        idx = all.index { |recipe| recipe&.id == @id}
+    def self.delete(user)
+        idx = all.index { |name| user&.name == @name}
         all.delete_at(idx)
     end
 

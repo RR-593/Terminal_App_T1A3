@@ -1,6 +1,19 @@
 ---
+- &1 !ruby/object:User
+  id: 70360276067520
+  name: Joe
+  colour: :red
+  time: '00:00'
+- *1
+- *1
+- &2 !ruby/object:User
+  id: 70266030198980
+  name: Joe
+  colour: :skyblue
+  time: '00:00'
+- *2
 - !ruby/object:User
-  id: 70213685539060
+  id: 70263756631380
   name: Raph
-  colour: :cyan
+  colour: :red
   time: '00:00'

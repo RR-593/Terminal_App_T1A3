@@ -9,3 +9,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem 'betterlorem', '~> 0.1.2'
 gem 'rainbow'
 gem 'timers'
+gem 'rubocop', '~> 1.12', require: false

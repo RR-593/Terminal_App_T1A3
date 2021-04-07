@@ -1,5 +1,4 @@
 require "rainbow"
-require "././models/Astrix"
 
 module Views
   module Exercises

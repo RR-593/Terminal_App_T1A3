@@ -6,7 +6,7 @@ def loggin
     cls
     print "\nEnter user name: "
     name = gets.chomp
-    colours = [:red, :green, :yellow, :blue, :purple, :cyan]
+    colours = [:red, :green, :gold, :deepskyblue, :skyblue, :hotpink]
     if $user = User.find(name) 
         puts "\nWellcome back "+Rainbow("#{$user.name}").color($user.colour)+"!"
     else

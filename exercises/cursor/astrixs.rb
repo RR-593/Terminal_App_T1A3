@@ -1,5 +1,3 @@
-require_relative "../../models/Astrix"
-
 def get_ran_loactions(size, num)
   random_locations = []
   begin
