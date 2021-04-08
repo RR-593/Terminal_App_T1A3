@@ -1,13 +1,25 @@
 #!/usr/bin/env ruby
-# frozen_string_literal: true
+require "rainbow"
+require_relative "./routes/selection_routes"
+require_relative "./models/Pages"
+require_relative "./Loggin"
 
-require 'rainbow'
-require_relative './routes/selection_routes'
-require_relative './models/Pages'
-require_relative './Loggin'
+
+# page = Page.new("main",'Use "j", "k" to select an option:',["Lessons","User info","Save & Quit"])
+# page.save
+# page = Page.new("Lessons",'Use "j", "k" to select an option:',["Cursor movement",'Modes','Commands','Back'])
+# page.save
+# page = Page.new("Cursor movement",'',["Learn",'Excercise','Back'])
+# page.save
+# page = Page.new("Modes",'',["Learn",'Excercise','Back'])
+# page.save
+# page = Page.new("Commands",'',["Learn",'Excercise','Back'])
+# page.save
+# page = Page.new("User info",'',['Change colour','Change Name','Back'])
+# page.save
 
 loggin
-main_page = Page.find('Vim cursor')
-main_page.cursor = Routes.menu(main_page) until main_page.cursor.nil?
+main_page = Page.find("Vim cursor")
+main_page.cursor = Routes::menu(main_page) while main_page.cursor != nil
 
 print "\e[H\e[2J"

@@ -1,18 +1,16 @@
-# frozen_string_literal: true
-
-require_relative './ActiveRecord'
+require_relative "./ActiveRecord"
 
 class User < ActiveRecord
-  attr_accessor :name, :colour, :time
+    attr_accessor :name, :colour, :time
 
-  def initialize(name, colour)
-    @id = object_id
-    @name = name
-    @colour = colour
-    @time = '00:00'
-  end
+    def initialize(name, colour)
+        @id = self.object_id
+        @name = name
+        @colour = colour
+        @time = "00:00"
+    end
 
-  def print_id
-    puts object_id
-  end
+    def print_id
+        puts self.object_id
+    end
 end
