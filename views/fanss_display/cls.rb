@@ -1,1 +1,3 @@
-def cls() puts "\e[H\e[2J" end
+def cls
+  puts "\e[H\e[2J"
+end

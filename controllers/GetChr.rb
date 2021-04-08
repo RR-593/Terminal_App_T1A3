@@ -1,9 +1,9 @@
 def getchr
   begin
-      system("stty raw -echo")
+      system('stty raw -echo')
       str = STDIN.getc
-    ensure
-      system("stty -raw echo")
+  ensure
+    system('stty -raw echo')
   end
-  return str.chr
+  str.chr
 end

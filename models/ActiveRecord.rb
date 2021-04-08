@@ -1,52 +1,50 @@
 require 'yaml'
 
 class ActiveRecord
+  def self.file_name
+    "#{self}s.yml"
+  end
 
-    def self.file_name
-        "#{self}s.yml"
+  def self.db
+    @db ||= begin
+      YAML.load(File.read(file_name))
+    rescue StandardError
+      []
     end
+  end
 
-    def self.db
-        @db ||= begin
-            YAML.load(File.read(file_name))
-        rescue
-            []
-        end
-    end
+  def self.all
+    db
+  end
 
-    def self.all
-        db
-    end
+  def self.find(name)
+    all.detect { |obj| obj.name.downcase == name.downcase } if name.instance_of?(''.class)
+  end
 
-    def self.find(name)
-        if name.class == ''.class
-            all.detect { |obj| obj.name.downcase == name.downcase }
-        end
-    end
+  def self.save(obj)
+    all << obj
+    File.open(file_name, 'w') { |file| file.write(all.to_yaml) }
+  end
 
-    def self.save(obj)
-        all << obj
-        File.open(file_name, 'w') {|file| file.write(all.to_yaml) }
-    end
+  def save
+    self.class.save(self)
+  end
 
-    def save
-        self.class.save(self)
-    end
+  def self.delete(user)
+    idx = all.index { |_name| user&.name == @name }
+    all.delete_at(idx)
+  end
 
-    def self.delete(user)
-        idx = all.index { |name| user&.name == @name}
-        all.delete_at(idx)
-    end
+  def delete
+    return if @id.nil?
 
-    def delete
-        return if @id.nil?
-        self.class.delete(self)
-        @id = nil
-    end
+    self.class.delete(self)
+    @id = nil
+  end
 
-    def self.delete_all
-        for i in 0..1
-            all.each_with_index{ |e,i| all.delete_at(i)}
-        end
+  def self.delete_all
+    (0..1).each do |_i|
+      all.each_with_index { |_e, i| all.delete_at(i) }
     end
+  end
 end
