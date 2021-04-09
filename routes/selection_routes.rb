@@ -11,7 +11,7 @@ module Routes
     MainController.display_page(cursor, page)
     menu_length = page.selections.length
 
-    temp_cursor, return_chr = vicont(temp_cursor = [0, cursor])
+    temp_cursor, return_chr = VimControls::basic(temp_cursor = [0, cursor])
     cursor = temp_cursor[1]
 
     if return_chr

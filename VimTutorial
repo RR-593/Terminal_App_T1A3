@@ -10,4 +10,6 @@ loggin
 main_page = Page.find('Vim cursor')
 main_page.cursor = Routes.menu(main_page) until main_page.cursor.nil?
 
+$user.save
+
 print "\e[H\e[2J"

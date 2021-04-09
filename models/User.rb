@@ -7,7 +7,7 @@ class User < ActiveRecord
     @id = object_id
     @name = name
     @colour = colour
-    @time = ['00:01', '00:02', '00:03']
+    @time = ["--no score--","--no score--","--no score--"]
   end
 
   def print_id

@@ -1,0 +1,30 @@
+---
+- !ruby/object:User
+  id: 70324213881040
+  name: Jack
+  colour: :green
+  time:
+  - '00:06.9'
+  - "--no score--"
+  - "--no score--"
+- &1 !ruby/object:User
+  id: 70285453895480
+  name: Raph
+  colour: :red
+  time:
+  - '00:23.8'
+  - '00:22.6'
+  - "--no score--"
+- *1
+- *1
+- &2 !ruby/object:User
+  id: 70318073609640
+  name: ''
+  colour: :hotpink
+  time:
+  - "--no score--"
+  - '00:31.4'
+  - "--no score--"
+- *2
+- *2
+- *2

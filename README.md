@@ -11,4 +11,5 @@ day 2
 
    to do agav
    to do more excersices lessons
+   to do add timer scores to user
    
