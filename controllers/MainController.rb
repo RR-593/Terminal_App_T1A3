@@ -19,7 +19,7 @@ module MainController
 
   def self.change_colour
     name = $user.name
-    Views::User::changecolour(name)
+    Views::User.changecolour(name)
 
     colour = gets.downcase.chomp
 
@@ -30,7 +30,7 @@ module MainController
   end
 
   def self.delete_user
-    $user.name = "Deleted"
+    $user.name = 'Deleted'
     $user.colour = :white
     $user.save
   end

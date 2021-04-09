@@ -3,6 +3,12 @@ require_relative './GetChr'
 def vicont(cursor)
   str = getchr
   case str
+  when 'w'
+
+  when 'b'
+
+  when 'e'
+
   when 'h'
     cursor[0] -= 1
   when 'j'

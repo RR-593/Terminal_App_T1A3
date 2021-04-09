@@ -2,7 +2,7 @@ require_relative '../exercises/exe_refs'
 require_relative '../controllers/MainController'
 
 module Routes
-  def self.routes(selection,cursor)
+  def self.routes(selection, cursor)
     case selection
     when 'Exercise (1)'
       cursor_exercise(1, 3)
@@ -14,13 +14,13 @@ module Routes
       print "\nEnter user new name: "
       $user.name = gets.chomp
     when 'Change Name'
-      MainController::change_name
+      MainController.change_name
     when 'Change Colour'
-      MainController::change_colour
+      MainController.change_colour
     when 'Delete Yourself'
-      MainController::delete_user
+      MainController.delete_user
       return 101
     end
-    return cursor
+    cursor
   end
 end

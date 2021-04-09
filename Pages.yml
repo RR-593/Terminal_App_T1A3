@@ -18,14 +18,14 @@
   cursor: 0
 - !ruby/object:Page
   name: Basic movement
-  content: "In vim you cant use your mouse to move the cursor.\nSo to move the cusor in vim you need to use hjkl\nas so:\n\n         ^\n         k\n    < h     l >\n         j\n         v\n\nAlternatively you can use the <v^> arrow keys to\nmove the cursor but you'll lose preciuos time!\n\nIn this excercise you'll need to move the cursor\nonto all the asterisks characters."
+  content: "In vim you cant use your mouse to move the cursor.\nSo to move the cusor in vim you need to use hjkl\nas so:\n\n         ^\n         k\n    < h     l >\n         j\n         v\n\nAlternatively you can use the <v^> arrow keys to\nmove the cursor but you'll lose preciuos time!\n\nIn this exercise you'll need to move the cursor\nonto all the asterisks characters."
   selections:
   - Exercise (1)
   - Back
   cursor: 0
 - !ruby/object:Page
   name: Advance movement
-  content: ''
+  content: "Additional navigation can be used in vim to move \nthrough a document faster. In this exercise vim's\nw,b and e countrols have been unlocked.\n\n  [w] Moves the cursor to the start of the next word.\n\n  [b] Moves the cursor to the beginning of the word.\n\n  [e] Moves to the end of the word.\n\nThis exercise is the same as before except there\nare move asterisks and paragraphs."
   selections:
   - Exercise (2)
   - Back

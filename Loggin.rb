@@ -9,11 +9,11 @@ def loggin
   if $user = User.find(name)
     puts "\nWellcome back " + Rainbow($user.name.to_s).color($user.colour) + '!'
   else
-    Views::User::changecolour(name)
+    Views::User.changecolour(name)
 
     colour = gets.downcase.chomp
 
     colour = colour.chr =~ /[^0-9]/ ? colour.to_sym : $colours[colour.chr.to_i - 1]
-    $user = User::new(name,colour)
+    $user = User.new(name, colour)
   end
 end

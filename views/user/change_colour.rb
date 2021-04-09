@@ -7,7 +7,7 @@ module Views
         print ', ' if colour != $colours.last
       end
       print ']'
-      
+
       print "\n#{name}, whats your favrioute colour: "
     end
   end

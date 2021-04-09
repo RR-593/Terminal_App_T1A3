@@ -10,4 +10,5 @@ day 2
 
 
    to do agav
-   todo 
+   to do more excersices lessons
+   
