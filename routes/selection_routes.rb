@@ -21,7 +21,7 @@ module Routes
       end
 
       selection = page.selections[cursor]
-      Routes.routes(selection)
+      cursor = Routes.routes(selection,cursor)
 
       cursor = nil if cursor >= menu_length - 1
     else

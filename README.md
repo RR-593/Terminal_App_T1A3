@@ -7,3 +7,7 @@ day 1
 day 2
    Add working lessons
    properly create a better dissplay method
+
+
+   to do agav
+   todo 

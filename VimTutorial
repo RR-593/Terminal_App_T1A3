@@ -4,6 +4,9 @@ require_relative './routes/selection_routes'
 require_relative './models/Pages'
 require_relative './Loggin'
 
+
+$colours = %i[red green gold deepskyblue skyblue hotpink]
+
 loggin
 main_page = Page.find('Vim cursor')
 main_page.cursor = Routes.menu(main_page) until main_page.cursor.nil?

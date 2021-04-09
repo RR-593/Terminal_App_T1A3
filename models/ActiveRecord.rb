@@ -31,15 +31,12 @@ class ActiveRecord
   end
 
   def self.delete(user)
-    idx = all.index { |_name| user&.name == @name }
+    idx = all.index { |users| users&.name == user.name }
     all.delete_at(idx)
   end
 
   def delete
-    return if @id.nil?
-
     self.class.delete(self)
-    @id = nil
   end
 
   def self.delete_all
