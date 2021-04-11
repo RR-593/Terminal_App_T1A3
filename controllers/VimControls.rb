@@ -31,12 +31,42 @@ module VimControls
     [cursor, non_alpha_chr]
   end
 
-  def self.advance_case(cursor,str)
+  def self.advance_case(cursor,lines,str)
     case str
     when 'w'
+      word_total = 0
+      idx = 0
+      words = lines[cursor[1]].split(' ')
+      idx = words.find_index { |word| 
+        word_total += word.length
+        word_total += 1 
+        word_total>cursor[0]
+      }
 
+      
+      if idx != words.length - 1
+        cursor[0] = word_total
+      else 
+        cursor[1] += 1
+        cursor[0] = 0
+      end
     when 'b'
+      word_total = 0
+      idx = 0
+      words = lines[cursor[1]].split(' ')
+      idx = words.find_index { |word| 
+        word_total += word.length if !(word_total + word.length > cursor[0])
+        word_total += 1 
+        word_total>cursor[0]
+      }
 
+      
+      if idx != words.length - 1
+        cursor[0] = word_total
+      else 
+        cursor[1] += 1
+        cursor[0] = 0
+      end
     when 'e'
 
     else
@@ -50,9 +80,9 @@ module VimControls
     basic_case(cursor,str)
   end
 
-  def self.advance(cursor,line)
+  def self.advance(cursor,lines)
     str = getchr
-    advance_case(cursor,str)
+    advance_case(cursor,lines,str)
   end
 
   def self.powered(cursor)
