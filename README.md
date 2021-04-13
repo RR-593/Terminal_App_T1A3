@@ -1,6 +1,17 @@
 # Vim Tutorial app
+[GIT Repoestory](https://github.com/RR-593/Terminal_App_T1A3)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 ## Software Development Plan
+describe at a high level what the application will do
+identify the problem it will solve and explain why you are developing it
+identify the target audience
+explain how a member of the target audience will use it
+## Flowchart
+
+
+
+
+
 Order of things done
 day 1 
     Pitched and got an idea approved
@@ -11,6 +22,5 @@ day 2
 
 
    to do agav
-   to do more excersices lessons
-   to do add timer scores to user
+   to do finish movments
    
