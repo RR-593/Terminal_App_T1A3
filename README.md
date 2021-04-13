@@ -8,7 +8,7 @@ identify the target audience
 explain how a member of the target audience will use it
 ## Flowchart
 
-
+![Flowchart made form codetoflow.com](https://raw.githubusercontent.com/RR-593/Terminal_App_T1A3/7b24b96/Images/code2flow_4mzs0V.png "Flowchart")
 
 
 
